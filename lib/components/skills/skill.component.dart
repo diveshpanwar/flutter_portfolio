@@ -93,6 +93,9 @@ class SKill extends StatelessWidget {
           Wrap(
             alignment: WrapAlignment.center,
             children: badges,
+          ),
+          SizedBox(
+            height: 8,
           )
         ],
       ),
