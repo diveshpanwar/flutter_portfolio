@@ -1,3 +1,4 @@
+import 'package:DiveshPanwar/common/divider.common.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -30,9 +31,10 @@ class TagLine extends StatelessWidget {
             style: TextStyle(
               fontFamily: 'OpenSans',
               fontStyle: FontStyle.italic,
-              fontSize: 18,
+              fontSize: 20,
             ),
           ),
+          CustomDivider(),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
