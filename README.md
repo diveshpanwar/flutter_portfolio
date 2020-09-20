@@ -1,6 +1,6 @@
-# flutter_portfolio
+# Divesh Panwar
 
-A new Flutter project.
+Portfolio of Divesh Panwar
 
 ## Getting Started
 
