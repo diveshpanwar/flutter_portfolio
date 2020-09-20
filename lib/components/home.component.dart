@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'header/avatar.component.dart';
 import 'header/tagline.component.dart';
+import '../common/divider.common.dart';
 
 class Home extends StatelessWidget {
   @override
@@ -26,10 +27,7 @@ class Home extends StatelessWidget {
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Avatar(),
-            TagLine(),
-          ],
+          children: [Avatar(), TagLine(), CustomDivider()],
         ),
       ),
     );
