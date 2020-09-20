@@ -1,4 +1,5 @@
-import 'package:DiveshPanwar/components/about/intro.component.dart';
+import './about/intro.component.dart';
+import './footer/footer.component.dart';
 import 'package:flutter/material.dart';
 import 'header/avatar.component.dart';
 import 'header/tagline.component.dart';
@@ -29,6 +30,7 @@ class Home extends StatelessWidget {
               fit: BoxFit.cover),
         ),
         child: ListView(
+          padding: EdgeInsets.zero,
           physics: AlwaysScrollableScrollPhysics(),
           controller: _controller,
           shrinkWrap: true,
@@ -40,6 +42,7 @@ class Home extends StatelessWidget {
             CustomDivider(),
             SKill(),
             CustomDivider(),
+            Footer()
           ],
         ),
       ),

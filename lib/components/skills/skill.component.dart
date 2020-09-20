@@ -52,7 +52,11 @@ class SKill extends StatelessWidget {
               style: TextStyle(
                 backgroundColor: Colors.white,
                 fontWeight: FontWeight.bold,
-                fontSize: 14,
+                color: Colors.black54,
+                fontSize: ScreenUtil().setSp(
+                  14,
+                  allowFontScalingSelf: true,
+                ),
               ),
             ),
           ),
