@@ -25,6 +25,7 @@ class Home extends StatelessWidget {
               fit: BoxFit.cover),
         ),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Avatar(),
             TagLine(),

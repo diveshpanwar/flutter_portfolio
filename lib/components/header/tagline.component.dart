@@ -1,11 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class TagLine extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    ScreenUtil.init(
+      designSize: Size(465, 768),
+      allowFontScaling: false,
+    );
     return (Center(
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Text(
             'SPECIALIST PROGRAMMER - INFOSYS LTD.',
@@ -13,7 +19,10 @@ class TagLine extends StatelessWidget {
                 fontFamily: 'OpenSans',
                 fontWeight: FontWeight.bold,
                 fontStyle: FontStyle.italic,
-                fontSize: 15,
+                fontSize: ScreenUtil().setSp(
+                  20,
+                  allowFontScalingSelf: true,
+                ),
                 color: Colors.black87),
           ),
           Text(
@@ -21,7 +30,7 @@ class TagLine extends StatelessWidget {
             style: TextStyle(
               fontFamily: 'OpenSans',
               fontStyle: FontStyle.italic,
-              fontSize: 15,
+              fontSize: 18,
             ),
           ),
           Row(
@@ -29,7 +38,6 @@ class TagLine extends StatelessWidget {
             children: [
               Padding(
                 padding: EdgeInsets.only(
-                  top: 6,
                   right: 6,
                 ),
                 child: Icon(
@@ -47,7 +55,10 @@ class TagLine extends StatelessWidget {
                     style: TextStyle(
                       fontFamily: 'OpenSans',
                       fontWeight: FontWeight.bold,
-                      fontSize: 15,
+                      fontSize: ScreenUtil().setSp(
+                        18,
+                        allowFontScalingSelf: true,
+                      ),
                       color: Colors.black54,
                       decoration: TextDecoration.underline,
                     ),
@@ -79,7 +90,10 @@ class TagLine extends StatelessWidget {
                     style: TextStyle(
                       fontFamily: 'OpenSans',
                       fontWeight: FontWeight.bold,
-                      fontSize: 15,
+                      fontSize: ScreenUtil().setSp(
+                        18,
+                        allowFontScalingSelf: true,
+                      ),
                       color: Colors.black54,
                       decoration: TextDecoration.underline,
                     ),
@@ -111,7 +125,10 @@ class TagLine extends StatelessWidget {
                     style: TextStyle(
                       fontFamily: 'OpenSans',
                       fontWeight: FontWeight.bold,
-                      fontSize: 15,
+                      fontSize: ScreenUtil().setSp(
+                        18,
+                        allowFontScalingSelf: true,
+                      ),
                       color: Colors.black54,
                       decoration: TextDecoration.underline,
                     ),
@@ -143,7 +160,10 @@ class TagLine extends StatelessWidget {
                     style: TextStyle(
                       fontFamily: 'OpenSans',
                       fontWeight: FontWeight.bold,
-                      fontSize: 15,
+                      fontSize: ScreenUtil().setSp(
+                        18,
+                        allowFontScalingSelf: true,
+                      ),
                       color: Colors.black54,
                       decoration: TextDecoration.underline,
                     ),
@@ -176,7 +196,10 @@ class TagLine extends StatelessWidget {
                     style: TextStyle(
                       fontFamily: 'OpenSans',
                       fontWeight: FontWeight.bold,
-                      fontSize: 15,
+                      fontSize: ScreenUtil().setSp(
+                        18,
+                        allowFontScalingSelf: true,
+                      ),
                       color: Colors.black54,
                       decoration: TextDecoration.underline,
                     ),
