@@ -1,3 +1,4 @@
+import 'package:DiveshPanwar/components/about/intro.component.dart';
 import 'package:flutter/material.dart';
 import 'header/avatar.component.dart';
 import 'header/tagline.component.dart';
@@ -6,6 +7,7 @@ import '../common/divider.common.dart';
 class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    ScrollController _controller = new ScrollController();
     return Scaffold(
       appBar: AppBar(
         title: Text(
@@ -25,9 +27,16 @@ class Home extends StatelessWidget {
               image: AssetImage("assets/images/pattern-bg.jpg"),
               fit: BoxFit.cover),
         ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [Avatar(), TagLine(), CustomDivider()],
+        child: ListView(
+          physics: AlwaysScrollableScrollPhysics(),
+          controller: _controller,
+          shrinkWrap: true,
+          children: [
+            Avatar(),
+            TagLine(),
+            CustomDivider(),
+            Introduction(),
+          ],
         ),
       ),
     );
