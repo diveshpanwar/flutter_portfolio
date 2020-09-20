@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'header/avatar.component.dart';
 import 'header/tagline.component.dart';
 import '../common/divider.common.dart';
+import './skills/skill.component.dart';
 
 class Home extends StatelessWidget {
   @override
@@ -36,6 +37,9 @@ class Home extends StatelessWidget {
             TagLine(),
             CustomDivider(),
             Introduction(),
+            CustomDivider(),
+            SKill(),
+            CustomDivider(),
           ],
         ),
       ),

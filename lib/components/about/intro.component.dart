@@ -8,7 +8,6 @@ class Introduction extends StatelessWidget {
       designSize: Size(465, 768),
       allowFontScaling: false,
     );
-    ScrollController _controller = new ScrollController();
     return Card(
       margin: EdgeInsets.all(12),
       elevation: 4,
