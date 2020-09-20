@@ -60,11 +60,14 @@ class SKill extends StatelessWidget {
               ),
             ),
           ),
-          label: Text(
-            skill['name'].toString(),
-            style: TextStyle(
-              color: Colors.white,
-              fontWeight: FontWeight.bold,
+          label: Padding(
+            padding: const EdgeInsets.only(right: 8.0),
+            child: Text(
+              skill['name'].toString(),
+              style: TextStyle(
+                color: Colors.white,
+                fontWeight: FontWeight.bold,
+              ),
             ),
           ),
         ),
