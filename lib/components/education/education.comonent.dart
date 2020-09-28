@@ -552,6 +552,7 @@ class _EducationState extends State<Education> {
             ),
             child: Stepper(
               steps: steps,
+              physics: AlwaysScrollableScrollPhysics(),
               currentStep: currentStep,
               onStepTapped: (step) => goTo(step),
               controlsBuilder: (BuildContext context,

@@ -1,3 +1,5 @@
+import 'package:DiveshPanwar/components/experience/experience.component.dart';
+
 import './education/education.comonent.dart';
 import './about/intro.component.dart';
 import './footer/footer.component.dart';
@@ -44,6 +46,8 @@ class Home extends StatelessWidget {
             SKill(),
             CustomDivider(),
             Education(),
+            CustomDivider(),
+            Experience(),
             CustomDivider(),
             Footer()
           ],
