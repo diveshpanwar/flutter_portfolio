@@ -1,3 +1,4 @@
+import './education/education.comonent.dart';
 import './about/intro.component.dart';
 import './footer/footer.component.dart';
 import 'package:flutter/material.dart';
@@ -41,6 +42,8 @@ class Home extends StatelessWidget {
             Introduction(),
             CustomDivider(),
             SKill(),
+            CustomDivider(),
+            Education(),
             CustomDivider(),
             Footer()
           ],
